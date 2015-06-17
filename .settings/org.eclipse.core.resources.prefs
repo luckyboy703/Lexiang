@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//WebRoot/article.jsp=UTF-8
+encoding//WebRoot/detailOfArticle&Transact.jsp=UTF-8
+encoding//WebRoot/detailOfVideo.jsp=UTF-8
+encoding//WebRoot/main.jsp=UTF-8
+encoding//WebRoot/personal.jsp=UTF-8
+encoding//WebRoot/publishArticle.jsp=UTF-8
+encoding//WebRoot/publishTransact.jsp=UTF-8
+encoding//WebRoot/service/favorite.jsp=UTF-8
+encoding//WebRoot/service/like_video.jsp=UTF-8
+encoding//WebRoot/transact.jsp=UTF-8
+encoding//WebRoot/video.jsp=UTF-8
+encoding//src/com/lexiang/dao/ArticleDao.java=UTF-8

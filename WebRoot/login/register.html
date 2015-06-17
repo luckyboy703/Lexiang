@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>注册页面</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="##" />
+	<meta name="Keywords" content="##" />
+	<meta name="description" content="##" />
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/yn-formvalidation.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#btnSubmit").click(function(){
+				$("#apForm").jsoncheckform({formid:"apForm"});
+			});
+		});
+	</script>
+</head>
+<body style="background:#D6E4FF">
+	<br/><br/><br/>
+	<div align ="center">
+		<a href="../index.html" title="音乐爱好者">
+			<img src="images/logo-a.png"/>
+		</a>
+</div>
+	<div id="formwrapper" style="background:#FFFFFF">
+		<h3 align="center">创建帐户</h3>
+		<form action="register_check.jsp" method="post" name="apForm" id="apForm">
+		<fieldset>
+		    <legend>用户注册</legend>
+		    <div>
+			   <label for="Name">用户名</label>
+			   <input type="text" name="Name" id="Name" title="必填，登录系统所需的帐号,请确保唯一性" checkStr="用户名" checkType="string,6,20" isEmpty="N" /> 
+			   *(2~30个字符)<br />
+			</div>
+		    <div>
+			   <label for="Email">电子邮箱</label>
+			   <input type="text" name="Email" id="Email" title="必填，电子邮箱" checkStr="电子邮箱" checkType="email" isEmpty="Y" /> *<br />  
+			</div>  
+		    <div>
+			   <label for="password">密码</label>
+			   <input type="password" name="password" id="password" title="必填,登录系统所需的密码" checkStr="密码" checkType="string,6,15" isEmpty="N" /> 
+			   *(6~15个字符)<br />
+			</div>
+		    <div>
+			   <label for="confirm_password">重复密码</label>
+			   <input type="password" name="confirm_password" id="confirm_password" title="必填,再次输入密码" checkStr="重复密码" checkType="string,6,15" idEmpty="N" equal="password" /> 
+			   *<br />
+			</div>
+			<div class="enter">
+					<input name="submit" id="btnSubmit" type="submit" class="buttom" value="提交" /> 
+					<input name="reset" type="reset" class="buttom" value="重置" />
+			</div>
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
