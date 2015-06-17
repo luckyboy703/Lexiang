@@ -1,5 +1,10 @@
 package com.lexiang.dao;
 
+/**
+* 与数据库review_article表连接的类，处理文章-评论关系的增删等请求，以及查询文章的所有评论
+* @author zhangyunhao
+*/
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
